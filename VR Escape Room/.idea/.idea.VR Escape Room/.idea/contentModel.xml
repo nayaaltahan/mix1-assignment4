@@ -833,6 +833,7 @@
           <e p="README.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="AnimateButtonScript.cs" t="Include" />
           <e p="ButtonScriptt.cs" t="Include" />
           <e p="FireScript.cs" t="Include" />
           <e p="JoystickLocomotion.cs" t="Include" />
