@@ -20,6 +20,10 @@ public class TankScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        water.SetActive(true);
+        if (other.name == "Bucket_1_1")
+        {
+            water.SetActive(true);    
+        }
+        
     }
 }
