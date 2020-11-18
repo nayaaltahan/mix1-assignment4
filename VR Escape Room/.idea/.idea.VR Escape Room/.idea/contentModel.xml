@@ -7,45 +7,10 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="LowPolyWater_Pack" t="Include">
-          <e p="LowPoly Island" t="Include">
-            <e p="Credits.txt" t="Include" />
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="GeneratePlane.cs" t="Include" />
-            </e>
-            <e p="LowPolyWater.cs" t="Include" />
-          </e>
-          <e p="Shaders" t="Include">
-            <e p="WaterShaded.shader" t="Include" />
-          </e>
-        </e>
+        <e p="Door.cs" t="Include" />
         <e p="Models" t="Include">
           <e p="Key" t="Include">
             <e p="readME keys.txt" t="Include" />
-          </e>
-        </e>
-        <e p="NVIDIA" t="Include">
-          <e p="Flex" t="Include">
-            <e p="Resources" t="Include">
-              <e p="Shaders" t="Include">
-                <e p="DebugPoints.shader" t="Include" />
-                <e p="FlexDrawFluid.cginc" t="Include" />
-                <e p="FlexDrawFluid.shader" t="Include" />
-                <e p="FlexDrawFluid2.shader" t="Include" />
-                <e p="FlexDrawParticles.shader" t="Include" />
-                <e p="FlexFluidShader.shader" t="Include" />
-                <e p="FlexPrepareFluid.shader" t="Include" />
-                <e p="FluidComposite.shader" t="Include" />
-                <e p="FluidDepth.shader" t="Include" />
-                <e p="FluidDepthBlur.shader" t="Include" />
-                <e p="FluidThickness.shader" t="Include" />
-                <e p="SourcePreview.shader" t="Include" />
-                <e p="SurfaceShader.shader" t="Include" />
-                <e p="SurfaceTest.shader" t="Include" />
-              </e>
-            </e>
           </e>
         </e>
         <e p="Oculus" t="Include">
@@ -832,9 +797,25 @@
           </e>
           <e p="README.txt" t="Include" />
         </e>
+        <e p="ResonanceAudio" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="ResonanceAudio.cs" t="Include" />
+            <e p="ResonanceAudioAcousticMesh.cs" t="Include" />
+            <e p="ResonanceAudioListener.cs" t="Include" />
+            <e p="ResonanceAudioMaterialMap.cs" t="Include" />
+            <e p="ResonanceAudioMaterialMapper.cs" t="Include" />
+            <e p="ResonanceAudioMaterialMapperUpdater.cs" t="Include" />
+            <e p="ResonanceAudioReverbProbe.cs" t="Include" />
+            <e p="ResonanceAudioRoom.cs" t="Include" />
+            <e p="ResonanceAudioRoomManager.cs" t="Include" />
+            <e p="ResonanceAudioSource.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="ResonanceAudioSurfaceMaterial.shader" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="AnimateButtonScript.cs" t="Include" />
-          <e p="ButtonScriptt.cs" t="Include" />
           <e p="FireScript.cs" t="Include" />
           <e p="JoystickLocomotion.cs" t="Include" />
           <e p="TankScript.cs" t="Include" />

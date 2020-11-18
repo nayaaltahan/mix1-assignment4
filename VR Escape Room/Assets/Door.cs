@@ -6,6 +6,8 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
     public Transform door;
+
+    public GameObject text;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +24,8 @@ public class Door : MonoBehaviour
     {
         if (other.gameObject.name == "key_gold")
         {
-            Debug.Log("34567890");
             door.Rotate(Vector3.up,90);
+            text.SetActive(true);
         }
     }
 }

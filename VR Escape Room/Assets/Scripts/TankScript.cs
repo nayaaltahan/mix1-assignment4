@@ -6,6 +6,7 @@ using UnityEngine;
 public class TankScript : MonoBehaviour
 {
     public GameObject water;
+    [SerializeField] private Animator TapAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +21,9 @@ public class TankScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Bucket_1_1")
+        if (other.name == "Bucket_1_1" && TapAnimator.GetBool("isOn"))
         {
-            water.SetActive(true);    
+            water.SetActive(true);
         }
         
     }

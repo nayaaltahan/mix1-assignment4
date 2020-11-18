@@ -5,15 +5,13 @@ using UnityEngine;
 
 public class AnimateButtonScript : MonoBehaviour
 {
-    public Animator animation;
+    [SerializeField] private Animator myAnimationController;
+    [SerializeField] private Animator TapAnimator;
 
-    public string animationName;
-    
     // Start is called before the first frame update
     void Start()
     {
-        animation = GetComponent<Animator>();
-        animation.enabled = false;
+        
     }
 
     // Update is called once per frame
@@ -21,11 +19,20 @@ public class AnimateButtonScript : MonoBehaviour
     {
         if (other.name == "LeftHandAnchor" || other.name == "RightHandAnchor")
         {
-            if (animation.enabled == false)
+            myAnimationController.SetBool("pressButton", true);
+            if (gameObject.name == "Button 4")
             {
-                animation.enabled = true;
+                TapAnimator.SetBool("isOn", true);
+                GameObject.Find("Tap").GetComponent<AudioSource>().enabled = true;
             }
-            animation.Play(animationName);
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.name == "LeftHandAnchor" || other.name == "RightHandAnchor")
+        {
+            myAnimationController.SetBool("pressButton", false);
         }
     }
 }

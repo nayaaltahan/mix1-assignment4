@@ -23,7 +23,6 @@ public class FireScript : MonoBehaviour
         if (other.name == "Bucket_1_1" && GameObject.Find("BucketWater").activeInHierarchy )
         {
             gameObject.SetActive(false);
-            Debug.Log("22222222");
             key.SetActive(true);
             key.GetComponent<OVRGrabbable>().enabled = true;
         }
